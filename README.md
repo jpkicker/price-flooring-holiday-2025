@@ -2,7 +2,7 @@
 
 **Status:** HTML Complete - Ready for deployment
 **File:** `index.html`
-**Promotional Period:** November 24, 2025 - January 31, 2026
+**Promotional Period:** December 8, 2025 - January 31, 2026
 **Pricing:**
 - Shaw Ascent NB: **$7.29/sf** (10% off regular)
 - CoreTec VV735: **$7.15/sf** (10% off regular)
@@ -407,30 +407,28 @@ If Price Flooring wants a custom subdomain:
 
 ### Your Landing Page URL
 
-After deploying to Netlify, your URL will be:
+**LIVE SITE:**
 ```
-https://[your-site-name].netlify.app
+https://price-flooring-holiday-2025.netlify.app/
 ```
 
-Example: `https://price-flooring-holiday.netlify.app`
-
-### UTM Tracking URLs (Recommended)
+### UTM Tracking URLs (Copy & Paste Ready)
 
 Use these URLs in your social posts to track where leads come from:
 
 **Facebook Posts:**
 ```
-https://[your-site].netlify.app?utm_source=facebook&utm_medium=social&utm_campaign=holiday-floor-spectacular
+https://price-flooring-holiday-2025.netlify.app/?utm_source=facebook&utm_medium=social&utm_campaign=holiday-floor-spectacular
 ```
 
 **Instagram Bio:**
 ```
-https://[your-site].netlify.app?utm_source=instagram&utm_medium=social&utm_campaign=holiday-floor-spectacular
+https://price-flooring-holiday-2025.netlify.app/?utm_source=instagram&utm_medium=social&utm_campaign=holiday-floor-spectacular
 ```
 
 **X (Twitter) Posts:**
 ```
-https://[your-site].netlify.app?utm_source=twitter&utm_medium=social&utm_campaign=holiday-floor-spectacular
+https://price-flooring-holiday-2025.netlify.app/?utm_source=twitter&utm_medium=social&utm_campaign=holiday-floor-spectacular
 ```
 
 ### Instagram Setup
@@ -492,7 +490,7 @@ Premium waterproof flooring at special pricing:
 ✨ Shaw Ascent: $7.29/sf (10% off!)
 ✨ CoreTec VV735: $7.15/sf (10% off!)
 
-Get your free quote: https://[your-site].netlify.app?utm_source=facebook&utm_medium=social&utm_campaign=holiday-floor-spectacular
+Get your free quote: https://price-flooring-holiday-2025.netlify.app/?utm_source=facebook&utm_medium=social&utm_campaign=holiday-floor-spectacular
 
 📍 2001-B W. Atlantic Ave, Delray Beach
 📞 (561) 327-4903
