@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Floor Spectacular | Price Flooring Delray Beach</title>
+    <meta name="description" content="Discover premium waterproof flooring from Shaw and CoreTec at Price Flooring's Holiday Floor Spectacular. 17 stunning colors, lifetime warranties, perfect for Florida homes.">
+
+    <!-- Google Fonts - Distinctive Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Price Flooring Brand Colors */
+            --price-primary: #F23D36;
+            --price-primary-dark: #D62E28;
+            --price-dark: #212121;
+            --price-charcoal: #323232;
+            --price-gray: #373737;
+
+            /* Extended Palette */
+            --cream: #FAF8F5;
+            --warm-white: #FFFDFB;
+            --gold-accent: #C9A962;
+            --shaw-blue: #003057;
+
+            /* Neutrals */
+            --text-primary: #1A1A1A;
+            --text-secondary: #5C5C5C;
+            --text-muted: #8A8A8A;
+            --border-light: #E8E4DE;
+            --border-medium: #D4CFC6;
+
+            /* Shadows */
+            --shadow-soft: 0 4px 20px rgba(33, 33, 33, 0.08);
+            --shadow-medium: 0 8px 40px rgba(33, 33, 33, 0.12);
+            --shadow-elevated: 0 20px 60px rgba(33, 33, 33, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--warm-white);
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 60px);
+        }
+
+        .serif {
+            font-family: 'DM Serif Display', Georgia, serif;
+        }
+
+        /* Animated Background Texture */
+        .texture-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            z-index: 9999;
+        }
+
+        /* ============ HEADER ============ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 253, 251, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-soft);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo-price {
+            height: 44px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-price:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-partners {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-partners:hover {
+            opacity: 1;
+        }
+
+        .logo-partners img {
+            height: 32px;
+            width: auto;
+        }
+
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .phone-link:hover {
+            color: var(--price-primary);
+        }
+
+        .phone-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 140px 0 100px;
+            background: linear-gradient(165deg, var(--cream) 0%, var(--warm-white) 50%, #FFF9F5 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(242, 61, 54, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--price-primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            animation: fadeSlideUp 0.8s ease-out;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-title {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(48px, 6vw, 80px);
+            font-weight: 400;
+            line-height: 1.1;
+            color: var(--price-dark);
+            margin-bottom: 24px;
+            animation: fadeSlideUp 0.8s ease-out 0.1s both;
+        }
+
+        .hero-title span {
+            color: var(--price-primary);
+            position: relative;
+        }
+
+        .hero-title span::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            right: 0;
+            height: 12px;
+            background: rgba(242, 61, 54, 0.15);
+            z-index: -1;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin-bottom: 40px;
+            animation: fadeSlideUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeSlideUp 0.8s ease-out 0.3s both;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--price-primary);
+            color: white;
+            padding: 18px 36px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--price-primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(242, 61, 54, 0.35);
+        }
+
+        .btn-primary svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text-primary);
+            padding: 18px 36px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid var(--border-medium);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--price-primary);
+            color: var(--price-primary);
+            background: rgba(242, 61, 54, 0.04);
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+            animation: fadeSlideUp 1s ease-out 0.4s both;
+        }
+
+        .hero-image-container {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-elevated);
+        }
+
+        .hero-image-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(242, 61, 54, 0.1) 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-floating-card {
+            position: absolute;
+            bottom: -30px;
+            left: -40px;
+            background: white;
+            padding: 24px 28px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-medium);
+            z-index: 10;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-floating-card .price-tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--price-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .hero-floating-card .price {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 42px;
+            color: var(--price-dark);
+        }
+
+        .hero-floating-card .price-suffix {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* Trust Badges in Hero */
+        .hero-trust {
+            display: flex;
+            gap: 32px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-light);
+            animation: fadeSlideUp 0.8s ease-out 0.5s both;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trust-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--cream);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--price-primary);
+        }
+
+        .trust-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .trust-subtext {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ============ PRODUCTS SECTION ============ */
+        .products-section {
+            padding: 120px 0;
+            background: var(--warm-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--price-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(36px, 4vw, 52px);
+            font-weight: 400;
+            color: var(--price-dark);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-light);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-elevated);
+            border-color: transparent;
+        }
+
+        .product-image-wrapper {
+            position: relative;
+            height: 320px;
+            overflow: hidden;
+        }
+
+        .product-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .product-card:hover .product-image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--price-primary);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(242, 61, 54, 0.4);
+        }
+
+        .product-badge-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .product-badge-price {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 32px;
+            line-height: 1;
+            margin: 4px 0;
+        }
+
+        .product-badge-unit {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .product-badge-discount {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        .product-content {
+            padding: 32px;
+        }
+
+        .product-brand {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .product-name {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 28px;
+            color: var(--price-dark);
+            margin-bottom: 4px;
+        }
+
+        .product-tagline {
+            font-size: 15px;
+            color: var(--price-primary);
+            margin-bottom: 24px;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .product-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 14px;
+        }
+
+        .product-features li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-check {
+            width: 20px;
+            height: 20px;
+            background: rgba(242, 61, 54, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .feature-check svg {
+            width: 12px;
+            height: 12px;
+            color: var(--price-primary);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .color-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--cream);
+            border-radius: 12px;
+        }
+
+        .color-count {
+            background: var(--price-primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .color-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* ============ WHY CHOOSE SECTION ============ */
+        .why-section {
+            padding: 120px 0;
+            background: var(--cream);
+            position: relative;
+        }
+
+        .why-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-light);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--price-primary);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .benefit-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .benefit-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--cream) 0%, #FFF5F4 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 28px;
+        }
+
+        .benefit-title {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 20px;
+            color: var(--price-dark);
+            margin-bottom: 12px;
+        }
+
+        .benefit-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ============ LEAD FORM SECTION ============ */
+        .form-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .form-content h2 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(36px, 4vw, 48px);
+            color: var(--price-dark);
+            margin-bottom: 20px;
+        }
+
+        .form-content p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .form-guarantees {
+            list-style: none;
+        }
+
+        .form-guarantees li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        .form-guarantees li svg {
+            width: 20px;
+            height: 20px;
+            color: var(--price-primary);
+        }
+
+        .form-container {
+            background: white;
+            padding: 48px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--border-light);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 15px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            border: 2px solid var(--border-light);
+            border-radius: 10px;
+            background: var(--warm-white);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--price-primary);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(242, 61, 54, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .checkbox-label input {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--price-primary);
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--price-primary);
+            color: white;
+            padding: 18px 32px;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .form-submit:hover {
+            background: var(--price-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(242, 61, 54, 0.35);
+        }
+
+        .form-privacy {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            background: var(--price-dark);
+            color: white;
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.6);
+            font-size: 15px;
+            margin-top: 20px;
+            max-width: 300px;
+            line-height: 1.7;
+        }
+
+        .footer h4 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--price-primary);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            color: var(--price-primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-contact-item a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact-item a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-partners {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .footer-partners img {
+            height: 28px;
+            width: auto;
+            opacity: 0.5;
+            filter: brightness(0) invert(1);
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-partners img:hover {
+            opacity: 0.8;
+        }
+
+        .footer-copyright {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-floating-card {
+                bottom: -20px;
+                left: 20px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-partners {
+                display: none;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero-trust {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 32px 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 24px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-floating-card {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 20px;
+            }
+
+            .product-image-wrapper {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="texture-overlay"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#">
+                    <img src="https://priceflooring.com/wp-content/uploads/2024/06/price-flooring-logo.webp" alt="Price Flooring" class="logo-price">
+                </a>
+                <div class="logo-partners">
+                    <img src="https://shawfloors.com/getattachment/52abdac4-d7bb-4d07-be35-310975ca4333/ShawFloorsLogo_Navy.webp?lang=en-US&ext=.webp" alt="Shaw Floors">
+                    <img src="https://shawfloors.widen.net/content/cqhxb58qfg/webp/CTFloors_Logo_Spot.webp?w=150&h=90&fmt=webp&quality=80&keep=c&crop=false" alt="CoreTec">
+                </div>
+                <div class="header-cta">
+                    <a href="tel:5613274903" class="phone-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        (561) 327-4903
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>Nov 24, 2025 - Jan 31, 2026</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Holiday Floor <span>Spectacular</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transform your home with premium waterproof flooring from Shaw & CoreTec. 17 stunning colors, lifetime warranties, perfect for Florida's coastal lifestyle.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#quote-form" class="btn-primary">
+                            Get Your Free Quote
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                        <a href="#products" class="btn-secondary">
+                            View Products
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trust-text">Lifetime Warranty</div>
+                                <div class="trust-subtext">Manufacturer backed</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trust-text">100% Waterproof</div>
+                                <div class="trust-subtext">Florida-ready</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trust-text">Delray Beach</div>
+                                <div class="trust-subtext">Local experts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="images/shaw-ascent-escape.jpg" alt="Premium waterproof flooring in modern Florida home" class="hero-image" onerror="this.style.background='linear-gradient(135deg, #E8E4DE 0%, #D4CFC6 100%)'; this.alt='Shaw Ascent NB Flooring';">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="price-tag">Special Pricing</div>
+                        <div class="price">$5.99<span class="price-suffix">/sf</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Featured Collections</div>
+                <h2 class="section-title">Premium Waterproof Flooring</h2>
+                <p class="section-subtitle">Two exceptional brands. 17 stunning colors. Special pricing through January 31st, 2026.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Shaw Ascent NB -->
+                <div class="product-card reveal">
+                    <div class="product-image-wrapper">
+                        <img src="images/shaw-ascent-escape.jpg" alt="Shaw Ascent NB luxury vinyl flooring" onerror="this.style.background='linear-gradient(135deg, #E8E4DE 0%, #D4CFC6 100%)';">
+                        <div class="product-badge">
+                            <div class="product-badge-label">On Sale</div>
+                            <div class="product-badge-price">$5.99</div>
+                            <div class="product-badge-unit">/sq ft</div>
+                            <div class="product-badge-discount">Save 10%</div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-brand">Shaw Floors - Florte Classic</div>
+                        <h3 class="product-name">Ascent NB</h3>
+                        <p class="product-tagline">Authentic Natural Bevel Edge</p>
+                        <ul class="product-features">
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">Natural Bevel Edge:</span> Authentic hardwood plank separation with depth</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">WPC Waterproof Core:</span> 100% waterproof, perfect for coastal living</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">ScuffResist Platinum:</span> Superior scratch protection for high-traffic areas</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">9" x 72" Planks:</span> Wide, long planks for upscale contemporary look</span>
+                            </li>
+                        </ul>
+                        <div class="color-info">
+                            <span class="color-count">10 Colors</span>
+                            <span class="color-desc">From dark Sierra walnut to light Alpine oak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CoreTec VV735 -->
+                <div class="product-card reveal">
+                    <div class="product-image-wrapper">
+                        <img src="images/coretec-allegiant-walnut.jpg" alt="CoreTec VV735 luxury vinyl plank" onerror="this.style.background='linear-gradient(135deg, #E8E4DE 0%, #D4CFC6 100%)';">
+                        <div class="product-badge">
+                            <div class="product-badge-label">On Sale</div>
+                            <div class="product-badge-price">$5.99</div>
+                            <div class="product-badge-unit">/sq ft</div>
+                            <div class="product-badge-discount">Save 10%</div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-brand">CoreTec - HD Collection</div>
+                        <h3 class="product-name">VV735</h3>
+                        <p class="product-tagline">Integrated Cork Comfort</p>
+                        <ul class="product-features">
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">Integrated Cork:</span> Pre-attached comfort, warmth & sound absorption</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">Waterproof Foamed Core:</span> Rigid core with ultimate moisture protection</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">Petproof Warranty:</span> Specifically designed and warranted for pet owners</span>
+                            </li>
+                            <li>
+                                <span class="feature-check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                <span><span class="feature-title">7" x 60" Planks:</span> Traditional proportions with contemporary styling</span>
+                            </li>
+                        </ul>
+                        <div class="color-info">
+                            <span class="color-count">7 Colors</span>
+                            <span class="color-desc">Warm to cool oak and walnut tones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Why Price Flooring</div>
+                <h2 class="section-title">Your Trusted Flooring Partner</h2>
+                <p class="section-subtitle">Premium products and professional service in Delray Beach</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🏆</div>
+                    <h3 class="benefit-title">Authorized Dealer</h3>
+                    <p class="benefit-text">Direct access to Shaw & CoreTec premium products with full manufacturer warranties and support.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🌴</div>
+                    <h3 class="benefit-title">Florida Expertise</h3>
+                    <p class="benefit-text">We understand coastal living and recommend flooring built for Florida's unique climate challenges.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">👨‍🔧</div>
+                    <h3 class="benefit-title">Pro Installation</h3>
+                    <p class="benefit-text">Expert local installation team ensures your floors are installed perfectly, every time.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">💰</div>
+                    <h3 class="benefit-title">Financing Available</h3>
+                    <p class="benefit-text">Flexible payment options make it easy to upgrade your home today without breaking the bank.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">📍</div>
+                    <h3 class="benefit-title">Full Showroom</h3>
+                    <p class="benefit-text">Visit our Delray Beach location to see samples and get expert design consultation in person.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Fast Turnaround</h3>
+                    <p class="benefit-text">Get your home ready for the holidays with efficient scheduling and quick installation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section class="form-section" id="quote-form">
+        <div class="container">
+            <div class="form-grid">
+                <div class="form-content reveal">
+                    <h2>Get Your Free Quote</h2>
+                    <p>Fill out the form and we'll contact you within 24 hours with pricing and next steps. Special pricing valid through January 31, 2026.</p>
+                    <ul class="form-guarantees">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Free, no-obligation quote
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Response within 24 hours
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Free in-home measurement available
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Samples delivered to your door
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-container reveal">
+                    <form action="#" method="POST" id="leadForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="zipCode">Zip Code *</label>
+                            <input type="text" id="zipCode" name="zipCode" class="form-input" placeholder="33445" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="product">Product Interest *</label>
+                                <select id="product" name="product" class="form-select" required>
+                                    <option value="">Select...</option>
+                                    <option value="shaw-ascent">Shaw Ascent NB</option>
+                                    <option value="coretec-vv735">CoreTec VV735</option>
+                                    <option value="both">Both - Compare</option>
+                                    <option value="unsure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="sqFootage">Square Footage *</label>
+                                <select id="sqFootage" name="sqFootage" class="form-select" required>
+                                    <option value="">Select...</option>
+                                    <option value="under-500">Less than 500 sf</option>
+                                    <option value="500-1000">500 - 1,000 sf</option>
+                                    <option value="1000-2000">1,000 - 2,000 sf</option>
+                                    <option value="2000-plus">2,000+ sf</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="timeline">Timeline *</label>
+                            <select id="timeline" name="timeline" class="form-select" required>
+                                <option value="">Select...</option>
+                                <option value="asap">ASAP / Before the holidays</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="browsing">Just browsing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Questions (Optional)</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="showroom" value="yes">
+                                Schedule a showroom appointment
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="samples" value="yes">
+                                Send me product samples
+                            </label>
+                        </div>
+
+                        <button type="submit" class="form-submit">Get My Free Quote</button>
+
+                        <p class="form-privacy">By submitting, you agree to be contacted by Price Flooring. We respect your privacy.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://priceflooring.com/wp-content/uploads/2024/06/price-flooring-logo.webp" alt="Price Flooring" style="height: 40px; filter: brightness(0) invert(1);">
+                    <p>Your Flooring & Design Source in Delray Beach, FL. Authorized dealer for Shaw Floors, CoreTec, Mohawk, Anderson Tuftex, and more.</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>2001-B W. Atlantic Avenue<br>Delray Beach, FL 33445</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href="tel:5613274903">(561) 327-4903</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <a href="mailto:info@priceflooring.com">info@priceflooring.com</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday</li>
+                        <li style="color: white; margin-bottom: 12px;">8:30am - 5:00pm</li>
+                        <li>Saturday</li>
+                        <li style="color: white;">9:00am - 4:00pm</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Featured Products</a></li>
+                        <li><a href="#quote-form">Get a Quote</a></li>
+                        <li><a href="https://priceflooring.com">Main Website</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-partners">
+                    <img src="https://shawfloors.com/getattachment/52abdac4-d7bb-4d07-be35-310975ca4333/ShawFloorsLogo_Navy.webp?lang=en-US&ext=.webp" alt="Shaw Floors">
+                    <img src="https://shawfloors.widen.net/content/cqhxb58qfg/webp/CTFloors_Logo_Spot.webp?w=150&h=90&fmt=webp&quality=80&keep=c&crop=false" alt="CoreTec">
+                </div>
+                <p class="footer-copyright">&copy; 2025 Price Flooring. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 100;
+                if (elementTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Form submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            console.log('Form submitted:', data);
+            alert('Thank you! We will contact you within 24 hours with your quote.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
