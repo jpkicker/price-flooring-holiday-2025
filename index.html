@@ -920,7 +920,11 @@
                 <h2 class="form-title">Get Your Free Quote</h2>
                 <p class="form-subtitle">Fill out the form below and we'll contact you within 24 hours with pricing and next steps. <strong style="color: var(--price-primary);">Promotional pricing valid through January 31, 2026.</strong></p>
 
-                <form action="#" method="POST" id="leadForm">
+                <form name="holiday-floor-spectacular" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="leadForm">
+                    <!-- Honeypot field for spam protection -->
+                    <p class="hidden" style="display:none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-grid">
                         <div class="form-group">
                             <label class="form-label" for="firstName">First Name *</label>
@@ -1081,22 +1085,50 @@
             });
         });
 
-        // Form submission handler (customize with your backend endpoint)
+        // Form submission handler for Netlify Forms
         document.getElementById('leadForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Collect form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
+            const form = this;
+            const submitBtn = form.querySelector('.form-submit');
+            const originalText = submitBtn.textContent;
 
-            // TODO: Send to your backend/CRM
-            console.log('Form submitted:', data);
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
 
-            // Show success message (customize as needed)
-            alert('Thank you! We will contact you within 24 hours with your quote and next steps.');
-
-            // Optionally reset form
-            this.reset();
+            // Submit to Netlify Forms
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Replace form with success message
+                    form.innerHTML = `
+                        <div style="text-align: center; padding: 40px 20px;">
+                            <div style="font-size: 60px; margin-bottom: 20px;">✓</div>
+                            <h3 style="color: #212121; font-size: 28px; margin-bottom: 15px;">Thank You!</h3>
+                            <p style="color: #666; font-size: 18px; line-height: 1.6;">
+                                Your request has been received.<br>
+                                <strong>Price Flooring</strong> will contact you within 24 hours with your quote and next steps.
+                            </p>
+                            <p style="margin-top: 25px; color: #666;">
+                                <strong>Questions?</strong> Call us at <a href="tel:5613274903" style="color: #F23D36;">(561) 327-4903</a>
+                            </p>
+                        </div>
+                    `;
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                alert('Oops! Something went wrong. Please call us at (561) 327-4903 or try again.');
+            });
         });
     </script>
 </body>
